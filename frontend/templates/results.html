@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body> 
+
+	{% if results|length>0 %}
+		{% for result in results %}
+   			<h2> {{ result.title.decode('utf-8') }} </h2>
+			<a href= {{ result.url }} >Visit Link</a>
+		{% endfor %}
+	{% endif %}
+	
+	{% if results|length==0 %}
+		<h2>No Results Found</h2>
+	{% endif %}
+
+   </body>
+</html>
