@@ -1,0 +1,10 @@
+disable 'Webpages'
+disable 'Urls'
+disable 'InvertedIndex'
+drop 'Webpages'
+drop 'Urls'
+drop 'InvertedIndex'
+create 'Webpages','cf'
+create 'Urls','cf'
+create 'InvertedIndex','cf'
+exit	
